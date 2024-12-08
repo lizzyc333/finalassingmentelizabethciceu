@@ -8,6 +8,7 @@
     background-size: 50px 50px;
     position: relative;
     z-index: 1;
+    font-family: "AlbertSans"
   }
 
   body::before {
@@ -18,39 +19,62 @@
     height: 100vh;
     background: linear-gradient(0deg, #c76ebca8, #515199a8);
   }
-  
+
   .navlist {
     display: grid;
     color: black;
     grid-template-columns: auto auto auto auto;
+    padding: 25px;
+    justify-content: center;
   }
-  
+
   #home {
     display: block;
-    height: 1000px;
     background-color: white;
   }
+
   #work {
     display: block;
-    height: 1000px;
     background-color: pink;
   }
-   #exp {
+
+  #exp {
     display: block;
     height: 1000px;
     background-color: blue;
   }
-   #about {
+
+  #about {
     display: block;
     height: 1000px;
     background-color: yellow;
   }
-  
+
+  .name {
+    font-size: 128px;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .spacer {
+    height: 50px;
+  }
+
+  .work-heading {
+    font-size: 128px;
+  }
+
+  .image-gallery {
+    display: grid;
+  }
 </style>
-    
+
 
 <body>
-  
+
   <div class="navbar">
     <div class="navlist">
       <div><a href="#home">Home</a> </div>
@@ -59,10 +83,59 @@
       <div><a href="#about">About </a> </div>
     </div>
   </div>
-  
 
-  <div id="home"></div>
-  <div id="work"></div>
+
+  <div id="home">
+
+    <div class="name">
+      Elizabeth Ciceu
+    </div>
+
+    <div class="image">
+      <img src="headshot.png" alt="">
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="intro">
+      <div class="intro-left"> Who am I</div>
+      <div class="intro-right">
+        <div class=""> I’m passionate about empowering brands by combining creativity, strategic thinking, and innovation to build experiences that truly resonate. </div>
+
+        <div class="">With over three years of diverse experience, I am a passionate and driven professional specializing in creative marketing, strategic branding, and digital communication. My journey spans social media management, leadership roles, and hands-on experience in dynamic industries, showcasing a commitment to innovation and attention to detail in every project.</div>
+        <button href="#about">
+          About
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="work">
+
+
+
+    <div class="work-heading">
+      (Selected) Works
+    </div>
+
+    <div class="">
+      MARKETING &amp; DESIGN
+    </div>
+
+    <div class="image-gallery">
+
+      <div class="row1">
+        <img src="wlootennis.png" alt="">
+        <img src="unichain.png" alt="">
+      </div>
+
+      <div class="row2">
+
+        <img src="Group 5.png" alt="">
+        <img src="Group 11.png" alt="">
+
+      </div>
+    </div>
+  </div>
   <div id="exp"></div>
   <div id="about"></div>
 </body>
