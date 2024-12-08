@@ -8,7 +8,6 @@
     background-size: 50px 50px;
     position: relative;
     z-index: 1;
-    overflow: hidden;
   }
 
   body::before {
@@ -19,5 +18,51 @@
     height: 100vh;
     background: linear-gradient(0deg, #c76ebca8, #515199a8);
   }
+  
+  .navlist {
+    display: grid;
+    color: black;
+    grid-template-columns: auto auto auto auto;
+  }
+  
+  #home {
+    display: block;
+    height: 1000px;
+    background-color: white;
+  }
+  #work {
+    display: block;
+    height: 1000px;
+    background-color: pink;
+  }
+   #exp {
+    display: block;
+    height: 1000px;
+    background-color: blue;
+  }
+   #about {
+    display: block;
+    height: 1000px;
+    background-color: yellow;
+  }
+  
 </style>
     
+
+<body>
+  
+  <div class="navbar">
+    <div class="navlist">
+      <div><a href="#home">Home</a> </div>
+      <div><a href="#work"> Work </a> </div>
+      <div><a href="#exp"> Experience </a> </div>
+      <div><a href="#about">About </a> </div>
+    </div>
+  </div>
+  
+
+  <div id="home"></div>
+  <div id="work"></div>
+  <div id="exp"></div>
+  <div id="about"></div>
+</body>
