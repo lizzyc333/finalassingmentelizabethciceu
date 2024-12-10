@@ -1,305 +1,334 @@
 <!DOCTYPE html>
-<style>
-  /* netnet default bg */
-  body {
-    margin: 0;
-    background-image: linear-gradient(#515199a8 2px, transparent 1px),
-      linear-gradient(90deg, #515199a8 2px, transparent 1px);
-    background-size: 50px 50px;
-    position: relative;
-    z-index: 1;
-    font-family: "AlbertSans"
-  }
+<html lang="en-US">
+  <head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400&display=swap">
+  </head>
+  <style>
+    /* netnet default bg */
+    body {
+      margin: 0;
+      background-image: linear-gradient(#515199a8 2px, transparent 1px),
+        linear-gradient(90deg, #515199a8 2px, transparent 1px);
+      /*       background-size: 50px 50px; */
+      position: relative;
+      z-index: -1;
+      font-family: "Barlow", sans-serif;
+      width: 100%;
+    }
 
-  body::before {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(0deg, #c76ebca8, #515199a8);
-  }
+    body>* {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
 
-  .navlist {
-    display: grid;
-    color: black;
-    grid-template-columns: auto auto auto auto;
-    padding: 25px;
-    justify-content: center;
-  }
+    /*     body::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      width: 100vw;
+      height: 100vh;
+      background: linear-gradient(0deg, #c76ebca8, #515199a8);
+    } */
 
-  #home {
-    display: block;
-    background-color: white;
-  }
+    .navbar {
+      background-color: #FCECFF;
+      justify-content: center;
+      padding: 0px 60px;
+      position: sticky;
+      top: 0px;
+      z-index: 1000;
+    }
+    
+    .navbar > * {
+      text-decoration: none;
+      color: inherit;
+    }
 
-  #work {
-    display: block;
-    background-color: pink;
-  }
+    .navlist {
+      display: grid;
+      color: black;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding: 25px;
+      justify-content: center;
+    }
 
-  #exp {
-    display: block;
-    background-color: blue;
-  }
+    #home {
+      display: block;
+      justify-content: center;
+      align-content: center;
+    }
+    
+    #home > * {
+      padding: 0% 10%;
+    }
 
-  #about {
-    display: block;
-    background-color: yellow;
-  }
+    #work {
+      display: block;
+    }
 
-  .name {
-    font-size: 128px;
-  }
+    #exp {
+      display: block;
+    }
 
-  .intro {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
+    #about {
+      display: block;
+    }
 
-  .spacer {
-    height: 50px;
-  }
+    #home .name {
+      font-size: 128px;
+    }
 
-  .work-heading {
-    font-size: 128px;
-  }
+    #home img {
+      display: hidden;
+      max-width: 60vw;
+    }
 
-  .image-gallery {
-    display: grid;
-  }
-</style>
+    .intro {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
 
+    .spacer {
+      height: 50px;
+    }
 
-<body>
+    .work-heading {
+      font-size: 128px;
+    }
 
-  <div class="navbar">
-    <div class="navlist">
-      <div><a href="#home">Home</a> </div>
-      <div><a href="#work"> Work </a> </div>
-      <div><a href="#exp"> Experience </a> </div>
-      <div><a href="#about">About </a> </div>
-    </div>
-  </div>
-
-
-  <div id="home">
-
-    <div class="name">
-      Elizabeth Ciceu
-    </div>
-
-    <div class="image">
-      <img src="headshot.png" alt="">
-    </div>
-
-    <div class="spacer"></div>
-
-    <div class="intro">
-      <div class="intro-left"> Who am I</div>
-      <div class="intro-right">
-        <div class=""> I’m passionate about empowering brands by combining creativity, strategic thinking, and innovation to build experiences that truly resonate. </div>
-
-        <div class="">With over three years of diverse experience, I am a passionate and driven professional specializing in creative marketing, strategic branding, and digital communication. My journey spans social media management, leadership roles, and hands-on experience in dynamic industries, showcasing a commitment to innovation and attention to detail in every project.</div>
-        <button href="#about">
-          About
-        </button>
-      </div>
-    </div>
-  </div>
-  <div id="work">
+    .image-gallery {
+      display: grid;
+    }
+  </style>
 
 
+  <body>
 
-    <div class="work-heading">
-      (Selected) Works
-    </div>
-
-    <div class="">
-      MARKETING &amp; DESIGN
-    </div>
-
-    <div class="image-block-1">
-
-      <div class="row1">
-        <img src="wlootennis.png" alt="">
-        <img src="unichain.png" alt="">
-      </div>
-
-      <div class="row2">
-
-        <img src="Group 5.png" alt="">
-        <img src="Group 11.png" alt="">
-
+    <div class="navbar">
+      <div class="navlist">
+        <div><a href="#home">Home</a> </div>
+        <div><a href="#work"> Work </a> </div>
+        <div><a href="#exp"> Experience </a> </div>
+        <div><a href="#about">About </a> </div>
       </div>
     </div>
 
-    <div class="image-block-2">
-      <div class="block-heading"> Old Spice Rebrand @spicedcanada </div>
 
-      <img src="spiced.png" alt="description of image">
-      <img src="bold for her day.png" alt="description of image">
-      <img src="fresh for her night.png" alt="description of image">
+    <div id="home">
 
+      <div class="name">
+        Elizabeth Ciceu
+      </div>
 
-    </div>
+      <div class="image">
+        <img src="headshot.png" alt="">
+      </div>
 
-    <div class="image-block-3">
-      <div class="block-heading"> Spiced AD </div>
-      <img src="spicedpink.png" alt="description of image">
+      <div class="spacer"></div>
 
-    </div>
+      <div class="intro">
+        <div class="intro-left"> Who am I</div>
+        <div class="intro-right">
+          <div class="first"> I’m passionate about empowering brands by combining creativity, strategic thinking, and innovation to build experiences that truly resonate. </div>
 
-    <div class="image-block-4">
-      <img src="Group 15.png" alt="description of image">
-    </div>
-  </div>
-  <div id="exp">
-
-    <div class="exp-heading">
-      Turning creative ideas into powerful strategies that elevate brands
-    </div>
-
-    <div class="exp-block">
-      <div class="headline">Head of Digital Media</div>
-      <div class="subline">Waterloo Blockchain (2024 – Present) </div>
-      <div class="points">
-        <div>
-          Social Media Strategy: Managed Instagram and Twitter accounts, creating engaging content to expand reach and foster community interaction.
-        </div>
-        <div>
-          Analytics and Insights: Monitored social media performance metrics and adjusted strategies to enhance engagement.
-        </div>
-        <div>
-          Brand Development: Promoted blockchain initiatives and events to educate and attract a wider audience.
-        </div>
-        <div>
-          Skills: Social Media Management, Content Creation, Analytics, Community Engagement, Trend Analysis
+          <div class="">With over three years of diverse experience, I am a passionate and driven professional specializing in creative marketing, strategic branding, and digital communication. My journey spans social media management, leadership roles, and hands-on experience in dynamic industries, showcasing a commitment to innovation and attention to detail in every project.</div>
+          <button href="#about">
+            About
+          </button>
         </div>
       </div>
     </div>
-    
-    <div class="exp-block">
-      <div class="headline">Head of Digital Media</div>
-      <div class="subline">Waterloo Blockchain (2024 – Present) </div>
-      <div class="points">
-        <div>
-          Social Media Strategy: Managed Instagram and Twitter accounts, creating engaging content to expand reach and foster community interaction.
+    <div id="work">
+
+
+
+      <div class="work-heading">
+        (Selected) Works
+      </div>
+
+      <div class="">
+        MARKETING &amp; DESIGN
+      </div>
+
+      <div class="image-block-1">
+
+        <div class="row1">
+          <img src="wlootennis.png" alt="">
+          <img src="unichain.png" alt="">
         </div>
-        <div>
-          Analytics and Insights: Monitored social media performance metrics and adjusted strategies to enhance engagement.
+
+        <div class="row2">
+
+          <img src="Group 5.png" alt="">
+          <img src="Group 11.png" alt="">
+
         </div>
-        <div>
-          Brand Development: Promoted blockchain initiatives and events to educate and attract a wider audience.
+      </div>
+
+      <div class="image-block-2">
+        <div class="block-heading"> Old Spice Rebrand @spicedcanada </div>
+
+        <img src="spiced.png" alt="description of image">
+        <img src="bold for her day.png" alt="description of image">
+        <img src="fresh for her night.png" alt="description of image">
+
+
+      </div>
+
+      <div class="image-block-3">
+        <div class="block-heading"> Spiced AD </div>
+        <img src="spicedpink.png" alt="description of image">
+
+      </div>
+
+      <div class="image-block-4">
+        <img src="Group 15.png" alt="description of image">
+      </div>
+    </div>
+    <div id="exp">
+
+      <div class="exp-heading">
+        Turning creative ideas into powerful strategies that elevate brands
+      </div>
+
+      <div class="exp-block">
+        <div class="headline">Head of Digital Media</div>
+        <div class="subline">Waterloo Blockchain (2024 – Present) </div>
+        <div class="points">
+          <div>
+            Social Media Strategy: Managed Instagram and Twitter accounts, creating engaging content to expand reach and foster community interaction.
+          </div>
+          <div>
+            Analytics and Insights: Monitored social media performance metrics and adjusted strategies to enhance engagement.
+          </div>
+          <div>
+            Brand Development: Promoted blockchain initiatives and events to educate and attract a wider audience.
+          </div>
+          <div>
+            Skills: Social Media Management, Content Creation, Analytics, Community Engagement, Trend Analysis
+          </div>
         </div>
-        <div>
-          Skills: Social Media Management, Content Creation, Analytics, Community Engagement, Trend Analysis
+      </div>
+
+      <div class="exp-block">
+        <div class="headline">Head of Digital Media</div>
+        <div class="subline">Waterloo Blockchain (2024 – Present) </div>
+        <div class="points">
+          <div>
+            Social Media Strategy: Managed Instagram and Twitter accounts, creating engaging content to expand reach and foster community interaction.
+          </div>
+          <div>
+            Analytics and Insights: Monitored social media performance metrics and adjusted strategies to enhance engagement.
+          </div>
+          <div>
+            Brand Development: Promoted blockchain initiatives and events to educate and attract a wider audience.
+          </div>
+          <div>
+            Skills: Social Media Management, Content Creation, Analytics, Community Engagement, Trend Analysis
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-block">
+        <div class="headline">Head of Digital Media</div>
+        <div class="subline">Waterloo Blockchain (2024 – Present) </div>
+        <div class="points">
+          <div>
+            Social Media Strategy: Managed Instagram and Twitter accounts, creating engaging content to expand reach and foster community interaction.
+          </div>
+          <div>
+            Analytics and Insights: Monitored social media performance metrics and adjusted strategies to enhance engagement.
+          </div>
+          <div>
+            Brand Development: Promoted blockchain initiatives and events to educate and attract a wider audience.
+          </div>
+          <div>
+            Skills: Social Media Management, Content Creation, Analytics, Community Engagement, Trend Analysis
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-block">
+        <div class="headline">Head of Digital Media</div>
+        <div class="subline">Waterloo Blockchain (2024 – Present) </div>
+        <div class="points">
+          <div>
+            Social Media Strategy: Managed Instagram and Twitter accounts, creating engaging content to expand reach and foster community interaction.
+          </div>
+          <div>
+            Analytics and Insights: Monitored social media performance metrics and adjusted strategies to enhance engagement.
+          </div>
+          <div>
+            Brand Development: Promoted blockchain initiatives and events to educate and attract a wider audience.
+          </div>
+          <div>
+            Skills: Social Media Management, Content Creation, Analytics, Community Engagement, Trend Analysis
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-block">
+        <div class="headline">Head of Digital Media</div>
+        <div class="subline">Waterloo Blockchain (2024 – Present) </div>
+        <div class="points">
+          <div>
+            Social Media Strategy: Managed Instagram and Twitter accounts, creating engaging content to expand reach and foster community interaction.
+          </div>
+          <div>
+            Analytics and Insights: Monitored social media performance metrics and adjusted strategies to enhance engagement.
+          </div>
+          <div>
+            Brand Development: Promoted blockchain initiatives and events to educate and attract a wider audience.
+          </div>
+          <div>
+            Skills: Social Media Management, Content Creation, Analytics, Community Engagement, Trend Analysis
+          </div>
+        </div>
+      </div>
+
+      <div class="exp-block">
+        <div class="headline">Head of Digital Media</div>
+        <div class="subline">Waterloo Blockchain (2024 – Present) </div>
+        <div class="points">
+          <div>
+            Social Media Strategy: Managed Instagram and Twitter accounts, creating engaging content to expand reach and foster community interaction.
+          </div>
+          <div>
+            Analytics and Insights: Monitored social media performance metrics and adjusted strategies to enhance engagement.
+          </div>
+          <div>
+            Brand Development: Promoted blockchain initiatives and events to educate and attract a wider audience.
+          </div>
+          <div>
+            Skills: Social Media Management, Content Creation, Analytics, Community Engagement, Trend Analysis
+          </div>
         </div>
       </div>
     </div>
-    
-    <div class="exp-block">
-      <div class="headline">Head of Digital Media</div>
-      <div class="subline">Waterloo Blockchain (2024 – Present) </div>
-      <div class="points">
-        <div>
-          Social Media Strategy: Managed Instagram and Twitter accounts, creating engaging content to expand reach and foster community interaction.
-        </div>
-        <div>
-          Analytics and Insights: Monitored social media performance metrics and adjusted strategies to enhance engagement.
-        </div>
-        <div>
-          Brand Development: Promoted blockchain initiatives and events to educate and attract a wider audience.
-        </div>
-        <div>
-          Skills: Social Media Management, Content Creation, Analytics, Community Engagement, Trend Analysis
-        </div>
-      </div>
+    <div id="about">
+      <div class="about-heading">Hi, I’m Elizabeth.
+        I love coffee,
+        playing tennis,
+        and my dog.</div>
+
+      <img src="Group 14.png" alt="description of image">
+
+      <p>
+        Coffee is my ultimate daily indulgence, and I can’t imagine life without it. The rich, bold flavour brings me instant comfort, while the energizing boost gives me exactly what I need to power through tennis practice, class, or library sessions. With practice every day as a varsity tennis athlete, coffee has become my secret weapon, not just for energy but for the calm and focus it brings. Each cup is a moment of pure zen, helping me find balance and peace no matter how packed my schedule gets.
+      </p>
+
+      <p>
+        I’ve played competitive tennis for as long as I can remember, mostly because my parents were passionate about the sport and were all for me going D1. But growing up, I hated it. The endless practices before and after school, the early mornings for weekend tournaments, it all felt like too much. By grade 10, I was burned out and quit during COVID, much to my parents’ disappointment. Now, playing varsity tennis at the University of Waterloo, I’ve rediscovered my love for the sport. I’ve fallen back in love with the game, not just for what it is, but because of the incredible teammates I’ve met and the lifelong friendships I’ve built through the team.
+      </p>
+
+      <p>
+
+        After I quit tennis, I got my dog, Sage, and she instantly became a source of pure happiness for me and my whole family. Her cheerful energy and unconditional love helped me through a difficult time, and she brought so much warmth into our lives. Being away at school, I miss her more than anything, and every time I go home, the joy of seeing her excitement when I walk through the door is unmatched.
+      </p>
+
+
+
+
     </div>
-    
-    <div class="exp-block">
-      <div class="headline">Head of Digital Media</div>
-      <div class="subline">Waterloo Blockchain (2024 – Present) </div>
-      <div class="points">
-        <div>
-          Social Media Strategy: Managed Instagram and Twitter accounts, creating engaging content to expand reach and foster community interaction.
-        </div>
-        <div>
-          Analytics and Insights: Monitored social media performance metrics and adjusted strategies to enhance engagement.
-        </div>
-        <div>
-          Brand Development: Promoted blockchain initiatives and events to educate and attract a wider audience.
-        </div>
-        <div>
-          Skills: Social Media Management, Content Creation, Analytics, Community Engagement, Trend Analysis
-        </div>
-      </div>
-    </div>
-    
-    <div class="exp-block">
-      <div class="headline">Head of Digital Media</div>
-      <div class="subline">Waterloo Blockchain (2024 – Present) </div>
-      <div class="points">
-        <div>
-          Social Media Strategy: Managed Instagram and Twitter accounts, creating engaging content to expand reach and foster community interaction.
-        </div>
-        <div>
-          Analytics and Insights: Monitored social media performance metrics and adjusted strategies to enhance engagement.
-        </div>
-        <div>
-          Brand Development: Promoted blockchain initiatives and events to educate and attract a wider audience.
-        </div>
-        <div>
-          Skills: Social Media Management, Content Creation, Analytics, Community Engagement, Trend Analysis
-        </div>
-      </div>
-    </div>
-    
-    <div class="exp-block">
-      <div class="headline">Head of Digital Media</div>
-      <div class="subline">Waterloo Blockchain (2024 – Present) </div>
-      <div class="points">
-        <div>
-          Social Media Strategy: Managed Instagram and Twitter accounts, creating engaging content to expand reach and foster community interaction.
-        </div>
-        <div>
-          Analytics and Insights: Monitored social media performance metrics and adjusted strategies to enhance engagement.
-        </div>
-        <div>
-          Brand Development: Promoted blockchain initiatives and events to educate and attract a wider audience.
-        </div>
-        <div>
-          Skills: Social Media Management, Content Creation, Analytics, Community Engagement, Trend Analysis
-        </div>
-      </div>
-    </div>
-  </div>
-  <div id="about">
-  
-    
-    
-    <div class="about-heading">Hi, I’m Elizabeth.
-I love coffee,
-playing tennis,
-and my dog.</div>
-    
-    <img src="Group 14.png" alt="description of image">
-    
-    <p>
-         Coffee is my ultimate daily indulgence, and I can’t imagine life without it. The rich, bold flavour brings me instant comfort, while the energizing boost gives me exactly what I need to power through tennis practice, class, or library sessions. With practice every day as a varsity tennis athlete, coffee has become my secret weapon, not just for energy but for the calm and focus it brings. Each cup is a moment of pure zen, helping me find balance and peace no matter how packed my schedule gets.
-    </p>
-    
-    <p>
-         I’ve played competitive tennis for as long as I can remember, mostly because my parents were passionate about the sport and were all for me going D1. But growing up, I hated it. The endless practices before and after school, the early mornings for weekend tournaments, it all felt like too much. By grade 10, I was burned out and quit during COVID, much to my parents’ disappointment. Now, playing varsity tennis at the University of Waterloo, I’ve rediscovered my love for the sport. I’ve fallen back in love with the game, not just for what it is, but because of the incredible teammates I’ve met and the lifelong friendships I’ve built through the team.
-    </p>
-    
-    <p>
-      
-      After I quit tennis, I got my dog, Sage, and she instantly became a source of pure happiness for me and my whole family. Her cheerful energy and unconditional love helped me through a difficult time, and she brought so much warmth into our lives. Being away at school, I miss her more than anything, and every time I go home, the joy of seeing her excitement when I walk through the door is unmatched.
-    </p>
-    
-  
-  
-  
-  </div>
-</body>
+  </body>
+</html>
