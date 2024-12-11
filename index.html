@@ -7,9 +7,8 @@
     /* netnet default bg */
     body {
       margin: 0;
-      background-image: linear-gradient(#515199a8 2px, transparent 1px),
+      background-image: repeating-linear-gradient(to bottom, pink, yellow 25%, pink 50%),
         linear-gradient(90deg, #515199a8 2px, transparent 1px);
-      /*       background-size: 50px 50px; */
       position: relative;
       z-index: -1;
       font-family: "Barlow", sans-serif;
@@ -38,8 +37,8 @@
       top: 0px;
       z-index: 1000;
     }
-    
-    .navbar > * {
+
+    .navbar>* {
       text-decoration: none;
       color: inherit;
     }
@@ -57,8 +56,8 @@
       justify-content: center;
       align-content: center;
     }
-    
-    #home > * {
+
+    #home>* {
       padding: 0% 10%;
     }
 
@@ -92,12 +91,88 @@
       height: 50px;
     }
 
+    .image-gallery {
+      display: grid;
+    }
+
+    .intro-right .first {
+      font-size: 34px;
+    }
+
+    .button-container {
+      padding: 10px;
+      text-align: center;
+      align-items: center;
+    }
+
+    .about-button {
+      width: 80px;
+      height: 30px;
+      background: pink;
+      border-radius: 10px;
+      text-align: center;
+      margin: 0 auto;
+      align-items: center;
+      align-self: center;
+    }
+
+    .line {
+      background-color: black;
+      height: 1px;
+      width: 50vh;
+      margin: 50 auto;
+    }
+
+    #work {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
     .work-heading {
+      margin: 0px auto;
       font-size: 128px;
     }
 
-    .image-gallery {
+    .image-block-1 {
       display: grid;
+      gap: 10px;
+      grid-template-rows: 1fr 2fr;
+      grid-template-columns: 1fr 1fr;
+      padding: 20px;
+    }
+
+    .image-block-2 {
+      display: grid;
+      gap: 10px;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+
+    .image-block-3 {
+      display: grid;
+      gap: 10px;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+
+    .image-block-4 {
+      display: grid;
+      gap: 10px;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    .image-block-1>img {
+      height: auto;
+      max-width: 100%;
     }
   </style>
 
@@ -124,20 +199,31 @@
         <img src="headshot.png" alt="">
       </div>
 
+      <div class="line"></div>
+
       <div class="spacer"></div>
 
       <div class="intro">
         <div class="intro-left"> Who am I</div>
         <div class="intro-right">
           <div class="first"> I’m passionate about empowering brands by combining creativity, strategic thinking, and innovation to build experiences that truly resonate. </div>
+          <div class="spacer">
+
+          </div>
 
           <div class="">With over three years of diverse experience, I am a passionate and driven professional specializing in creative marketing, strategic branding, and digital communication. My journey spans social media management, leadership roles, and hands-on experience in dynamic industries, showcasing a commitment to innovation and attention to detail in every project.</div>
-          <button href="#about">
-            About
-          </button>
+
+          <div class="spacer"></div>
+          <div class="button-container">
+            <div class="about-button"> About </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <div class="spacer"></div>
     <div id="work">
 
 
@@ -151,22 +237,17 @@
       </div>
 
       <div class="image-block-1">
-
-        <div class="row1">
-          <img src="wlootennis.png" alt="">
-          <img src="unichain.png" alt="">
-        </div>
-
-        <div class="row2">
-
-          <img src="Group 5.png" alt="">
-          <img src="Group 11.png" alt="">
-
-        </div>
+        <img src="wlootennis.png" alt="">
+        <img src="unichain.png" alt="">
+        <img src="Group 5.png" alt="">
+        <img src="Group 11.png" alt="">
       </div>
 
+      <div class="spacer"></div>
+
+      <div class="block-heading"> Old Spice Rebrand @spicedcanada </div>
       <div class="image-block-2">
-        <div class="block-heading"> Old Spice Rebrand @spicedcanada </div>
+
 
         <img src="spiced.png" alt="description of image">
         <img src="bold for her day.png" alt="description of image">
@@ -175,11 +256,16 @@
 
       </div>
 
+      <div class="spacer"></div>
+
+      <div class="block-heading"> Spiced AD </div>
       <div class="image-block-3">
-        <div class="block-heading"> Spiced AD </div>
+
         <img src="spicedpink.png" alt="description of image">
 
       </div>
+
+      <div class="spacer"></div>
 
       <div class="image-block-4">
         <img src="Group 15.png" alt="description of image">
